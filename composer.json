@@ -1,0 +1,25 @@
+{
+    "name": "cyril-verloop/iterator",
+    "description": "An iterator utility.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CyrilVerloop\\Iterator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CyrilVerloop\\Iterator\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Cyril VERLOOP",
+            "email": "cyril.verloop@webqard.fr"
+        }
+    ]
+}
