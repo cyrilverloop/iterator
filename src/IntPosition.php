@@ -11,7 +11,7 @@ namespace CyrilVerloop\Iterator;
 abstract class IntPosition implements \Iterator
 {
 
-    // Attributes :
+    // Properties :
 
     /**
      * @var int the position.
