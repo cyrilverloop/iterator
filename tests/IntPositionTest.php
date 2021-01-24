@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
  */
 class IntPositionTest extends TestCase
 {
-    // Attributes :
+    // Properties :
 
     /**
      * @var \CyrilVerloop\Iterator\IntPosition the test subject.
@@ -25,7 +25,7 @@ class IntPositionTest extends TestCase
     protected IntPosition $items;
 
 
-    // Méthodes :
+    // Methods :
 
     /**
      * Initialises tests.
