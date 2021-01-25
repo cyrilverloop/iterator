@@ -2,7 +2,9 @@
 
 A simple PHP iterator abstract class requiring PHP 7.4+.
 
-[![GitHub license](https://img.shields.io/github/license/cyrilverloop/iterator)](https://github.com/cyrilverloop/iterator/blob/trunk/LICENSE)
+[![License](https://img.shields.io/github/license/cyrilverloop/iterator)](https://github.com/cyrilverloop/iterator/blob/trunk/LICENSE)
+[![Type coverage](https://shepherd.dev/github/cyrilverloop/iterator/coverage.svg)](https://shepherd.dev/github/cyrilverloop/iterator)
+[![Minimum PHP version](https://img.shields.io/badge/php-%3E%3D7.4-%23777BB4?logo=php&style=flat)](https://www.php.net/)
 
 
 ## Installation
