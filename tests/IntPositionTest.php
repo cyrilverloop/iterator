@@ -138,7 +138,10 @@ class IntPositionTest extends TestCase
      */
     public function testCanHaveCurrentPositionNotAsTheLast(): void
     {
-        self::assertFalse($this->items->currentIsLast(), 'An empty list can not have the current position as the last.');
+        self::assertFalse(
+            $this->items->currentIsLast(),
+            'An empty list can not have the current position as the last.'
+        );
 
         $this->items->add(123);
         $this->items->next();
@@ -156,7 +159,10 @@ class IntPositionTest extends TestCase
      */
     public function testCanHaveCurrentPositionAsTheLast(): void
     {
-        self::assertFalse($this->items->currentIsLast(), 'An empty list can not have the current position as the last.');
+        self::assertFalse(
+            $this->items->currentIsLast(),
+            'An empty list can not have the current position as the last.'
+        );
 
         $this->items->add(123);
 
