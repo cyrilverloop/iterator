@@ -62,6 +62,21 @@ jobs:
     - name: Run php lint
       run: find ./src/ ./tests/ -type f -name '*.php' -print0 | xargs -0 -n1 -P4 php -l -n | (! grep -v "No syntax errors detected" )
 
+  phpcs:
+    needs: phplint
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: installed-project
+
+    - name: Untar project.
+      run:  tar -xf project.tar
+
+    - name: Run phpcs
+      run: ./tools/phpcs --standard=PSR12 --extensions=php ./src/ ./tests/
+
   test:
     needs: phplint
     runs-on: ubuntu-20.04
