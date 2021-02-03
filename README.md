@@ -22,8 +22,8 @@ user@host project$ composer require "cyril-verloop/iterator"
 user@host ~$ cd [PATH_WHERE_TO_PUT_THE_PROJECT] # E.g. ~/projects/
 user@host projects$ git clone https://github.com/cyrilverloop/iterator.git
 user@host projects$ cd iterator
-user@host symfony-demo$ composer install -o
-user@host symfony-demo$ phive install
+user@host iterator$ composer install -o
+user@host iterator$ phive install
 ```
 
 
