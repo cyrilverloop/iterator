@@ -9,7 +9,7 @@ use CyrilVerloop\Iterator\Tests\Items;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Test the iterator.
+ * Tests the iterator.
  * @package \CyrilVerloop\Iterator\Tests
  *
  * @coversDefaultClass \CyrilVerloop\Iterator\IntPosition
@@ -38,7 +38,7 @@ class IntPositionTest extends TestCase
 
 
     /**
-     * Test that the cursor position can be changed.
+     * Tests that the cursor position can be changed.
      * @return void
      *
      * @covers ::key
@@ -64,7 +64,7 @@ class IntPositionTest extends TestCase
 
 
     /**
-     * Test that an \OutOfRangeException is thrown
+     * Tests that an \OutOfRangeException is thrown
      * if the current position has no item.
      * @return void
      *
@@ -79,7 +79,7 @@ class IntPositionTest extends TestCase
     }
 
     /**
-     * Test that the current item is returned.
+     * Tests that the current item is returned.
      * @return void
      *
      * @covers ::current
@@ -96,7 +96,7 @@ class IntPositionTest extends TestCase
 
 
     /**
-     * Test that the position is invalid.
+     * Tests that the position is invalid.
      * @return void
      *
      * @covers ::valid
@@ -114,7 +114,7 @@ class IntPositionTest extends TestCase
     }
 
     /**
-     * Test that the position is valid.
+     * Tests that the position is valid.
      * @return void
      *
      * @covers ::valid
@@ -130,7 +130,7 @@ class IntPositionTest extends TestCase
 
 
     /**
-     * Test that the current position is not the last.
+     * Tests that the current position is not the last.
      * @return void
      *
      * @covers ::currentIsLast
@@ -152,7 +152,7 @@ class IntPositionTest extends TestCase
 
 
     /**
-     * Test that the current position is the last.
+     * Tests that the current position is the last.
      * @return void
      *
      * @covers ::currentIsLast
