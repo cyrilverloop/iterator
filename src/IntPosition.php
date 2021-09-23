@@ -31,7 +31,7 @@ abstract class IntPosition implements \Iterator
      */
     public function __construct()
     {
-        $this->position = 1;
+        $this->position = 0;
         $this->list = [];
     }
 
@@ -91,7 +91,7 @@ abstract class IntPosition implements \Iterator
      */
     public function rewind(): void
     {
-        $this->position = 1;
+        $this->position = 0;
     }
 
 

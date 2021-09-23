@@ -44,7 +44,7 @@ class Items extends IntPosition
 {
     public function add(Item $item): void
     {
-        $this->list[count($this->list) + 1] = $item;
+        $this->list[count($this->list)] = $item;
     }
 
     public function current(): Item
@@ -57,7 +57,6 @@ class Items extends IntPosition
 Then, you can use it in a foreach loop :
 
 ```php
-
 $items->add($item1);
 $items->add($item2);
 

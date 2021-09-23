@@ -22,7 +22,7 @@ class IntPositionTest extends TestCase
     /**
      * @var \CyrilVerloop\Iterator\IntPosition the test subject.
      */
-    protected IntPosition $items;
+    private IntPosition $items;
 
 
     // Methods :
@@ -47,19 +47,19 @@ class IntPositionTest extends TestCase
      */
     public function testCanChangeTheCursorPosition(): void
     {
-        self::assertSame(1, $this->items->key(), 'The default position must be 1.');
+        self::assertSame(0, $this->items->key(), 'The default position must be 0.');
+
+        $this->items->next();
+
+        self::assertSame(1, $this->items->key(), 'The position must be 1.');
 
         $this->items->next();
 
         self::assertSame(2, $this->items->key(), 'The position must be 2.');
 
-        $this->items->next();
-
-        self::assertSame(3, $this->items->key(), 'The position must be 3.');
-
         $this->items->rewind();
 
-        self::assertSame(1, $this->items->key(), 'The position must return to the default : 1.');
+        self::assertSame(0, $this->items->key(), 'The position must return to the default : 0.');
     }
 
 
@@ -87,7 +87,7 @@ class IntPositionTest extends TestCase
      */
     public function testCanReturnTheCurrentItem(): void
     {
-        self::assertSame(1, $this->items->key(), 'The current position must be 1.');
+        self::assertSame(0, $this->items->key(), 'The current position must be 0.');
 
         $this->items->add(123);
 

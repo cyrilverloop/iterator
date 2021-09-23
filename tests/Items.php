@@ -10,6 +10,6 @@ class Items extends IntPosition
 {
     public function add($item): void
     {
-        $this->list[count($this->list) + 1] = $item;
+        $this->list[count($this->list)] = $item;
     }
 }
