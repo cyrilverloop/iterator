@@ -10,7 +10,6 @@ namespace CyrilVerloop\Iterator;
  */
 abstract class IntPosition implements \Iterator
 {
-
     // Properties :
 
     /**
