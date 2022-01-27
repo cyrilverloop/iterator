@@ -44,7 +44,7 @@ abstract class IntPosition implements \Iterator
      * @throws \OutOfRangeException if the current position does not exist or is null.
      * @return mixed the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         if (isset($this->list[$this->position]) === false) {
             throw new \OutOfRangeException('intPosition.position.notExist');
