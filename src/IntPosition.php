@@ -6,7 +6,6 @@ namespace CyrilVerloop\Iterator;
 
 /**
  * Class implementing \Iterator in the form of [integer => object].
- * @package \CyrilVerloop\Iterator
  */
 abstract class IntPosition implements \Iterator
 {
@@ -68,7 +67,6 @@ abstract class IntPosition implements \Iterator
 
     /**
      * Move the position to the next element.
-     * @return void
      */
     public function next(): void
     {
@@ -86,7 +84,6 @@ abstract class IntPosition implements \Iterator
 
     /**
      * Sets the position to the first element.
-     * @return void
      */
     public function rewind(): void
     {
