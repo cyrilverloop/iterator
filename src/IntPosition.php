@@ -54,7 +54,7 @@ abstract class IntPosition implements \Iterator
 
     /**
      * Verify whether the current position is valid or not.
-     * @return boolean whether the current position is valid or not.
+     * @return bool whether the current position is valid or not.
      */
     public function valid(): bool
     {
