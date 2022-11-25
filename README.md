@@ -66,33 +66,31 @@ foreach($items as $item) {
 ```
 
 
-## Development
+## Continuous integration
 
-You can install development tools through Phive :
+### Tests
+
+To run the tests :
 ```shellsession
-user@host iterator$ phive install
+user@host doctrine-entities$ ./tools/phpunit -c ./ci/phpunit.xml
 ```
+The generated outputs will be in `./ci/phpunit/`.
+Look at `./ci/phpunit/html/index.html` for code coverage
+and `./ci/phpunit/testdox.html` for a verbose list of passing / failing tests.
 
-## PHPUnit
+### Static analysis
 
-To execute tests :
+To do a static analysis :
 ```shellsession
-user@host iterator$ ./tools/phpunit -c ./ci/phpunit.xml
+user@host doctrine-entities$ ./tools/psalm -c ./ci/psalm.xml [--report=./psalm/psalm.txt --output-format=text]
 ```
-The generated coverage report will be in `./ci/phpunit/`.
-
-## Psalm
-
-To verify the code with Psalm :
-```shellsession
-user@host iterator$ ./tools/psalm -c ./ci/psalm.xml
-```
+Use "--report=./psalm/psalm.txt --output-format=text"
+if you want the output in a file instead of on screen.
 
 ## PHPDoc
 
 To generate the PHPDoc :
 ```shellsession
-user@host iterator$ ./tools/phpdocumentor --config ./ci/phpdoc.xml
+user@host doctrine-entities$ ./tools/phpdocumentor --config ./ci/phpdoc.xml
 ```
 The generated HTML documentation will be in `./ci/phpdoc/`.
-
