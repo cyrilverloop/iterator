@@ -72,7 +72,7 @@ foreach($items as $item) {
 
 To run the tests :
 ```shellsession
-user@host doctrine-entities$ ./tools/phpunit -c ./ci/phpunit.xml
+user@host iterator$ ./tools/phpunit -c ./ci/phpunit.xml
 ```
 The generated outputs will be in `./ci/phpunit/`.
 Look at `./ci/phpunit/html/index.html` for code coverage
@@ -82,15 +82,15 @@ and `./ci/phpunit/testdox.html` for a verbose list of passing / failing tests.
 
 To do a static analysis :
 ```shellsession
-user@host doctrine-entities$ ./tools/psalm -c ./ci/psalm.xml [--report=./psalm/psalm.txt --output-format=text]
+user@host iterator$ ./tools/psalm -c ./ci/psalm.xml [--report=./psalm/psalm.txt --output-format=text]
 ```
 Use "--report=./psalm/psalm.txt --output-format=text"
 if you want the output in a file instead of on screen.
 
-## PHPDoc
+### PHPDoc
 
 To generate the PHPDoc :
 ```shellsession
-user@host doctrine-entities$ ./tools/phpdocumentor --config ./ci/phpdoc.xml
+user@host iterator$ ./tools/phpdocumentor --config ./ci/phpdoc.xml
 ```
 The generated HTML documentation will be in `./ci/phpdoc/`.
