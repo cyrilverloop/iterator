@@ -7,13 +7,14 @@ namespace CyrilVerloop\Iterator\Tests;
 use CyrilVerloop\Iterator\IntPosition;
 use CyrilVerloop\Iterator\Tests\Items;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes as PA;
 
 /**
  * Tests the iterator.
- *
- * @coversDefaultClass \CyrilVerloop\Iterator\IntPosition
- * @covers ::__construct
  */
+#[
+    PA\CoversClass(IntPosition::class)
+]
 class IntPositionTest extends TestCase
 {
     // Properties :
@@ -37,10 +38,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the cursor position can be changed.
-     *
-     * @covers ::key
-     * @covers ::next
-     * @covers ::rewind
      */
     public function testCanChangeTheCursorPosition(): void
     {
@@ -63,8 +60,6 @@ class IntPositionTest extends TestCase
     /**
      * Tests that an \OutOfRangeException is thrown
      * if the current position has no item.
-     *
-     * @covers ::current
      */
     public function testCanThrowAnOutOfRangeExceptionIfTheCurrentPositionHasNoItem(): void
     {
@@ -76,9 +71,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the current item is returned.
-     *
-     * @covers ::current
-     * @covers ::key
      */
     public function testCanReturnTheCurrentItem(): void
     {
@@ -92,9 +84,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the position is invalid.
-     *
-     * @covers ::valid
-     * @covers ::next
      */
     public function testCanHaveAnInvalidPosition(): void
     {
@@ -109,8 +98,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the position is valid.
-     *
-     * @covers ::valid
      */
     public function testCanHaveAValidPosition(): void
     {
@@ -124,9 +111,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the current position is not the last.
-     *
-     * @covers ::currentIsLast
-     * @covers ::next
      */
     public function testCanHaveCurrentPositionNotAsTheLast(): void
     {
@@ -145,8 +129,6 @@ class IntPositionTest extends TestCase
 
     /**
      * Tests that the current position is the last.
-     *
-     * @covers ::currentIsLast
      */
     public function testCanHaveCurrentPositionAsTheLast(): void
     {
