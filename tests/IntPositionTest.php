@@ -6,8 +6,8 @@ namespace CyrilVerloop\Iterator\Tests;
 
 use CyrilVerloop\Iterator\IntPosition;
 use CyrilVerloop\Iterator\Tests\Items;
-use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes as PA;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Tests the iterator.
