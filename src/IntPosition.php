@@ -7,6 +7,8 @@ namespace CyrilVerloop\Iterator;
 /**
  * Class implementing \Iterator in the form of [integer => object].
  * @template-implements \Iterator<int, mixed>
+ *
+ * @psalm-api
  */
 abstract class IntPosition implements \Iterator
 {
