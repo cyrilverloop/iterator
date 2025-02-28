@@ -46,6 +46,7 @@ abstract class IntPosition implements \Iterator
      * @throws \OutOfRangeException if the current position does not exist or is null.
      * @return mixed the current element.
      */
+    #[\Override()]
     public function current(): mixed
     {
         if (isset($this->list[$this->position]) === false) {
@@ -59,6 +60,7 @@ abstract class IntPosition implements \Iterator
      * Verify whether the current position is valid or not.
      * @return bool whether the current position is valid or not.
      */
+    #[\Override()]
     public function valid(): bool
     {
         if (isset($this->list[$this->position]) === false) {
@@ -71,6 +73,7 @@ abstract class IntPosition implements \Iterator
     /**
      * Move the position to the next element.
      */
+    #[\Override()]
     public function next(): void
     {
         $this->position++;
@@ -80,6 +83,7 @@ abstract class IntPosition implements \Iterator
      * Returns the current position.
      * @return int the current position.
      */
+    #[\Override()]
     public function key(): int
     {
         return $this->position;
@@ -88,6 +92,7 @@ abstract class IntPosition implements \Iterator
     /**
      * Sets the position to the first element.
      */
+    #[\Override()]
     public function rewind(): void
     {
         $this->position = 0;
